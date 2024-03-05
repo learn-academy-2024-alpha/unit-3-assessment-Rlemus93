@@ -27,35 +27,49 @@ PRs should be posted _before_ class begins on Monday, March 4, 2024.
 
 ### React Challenge
 
-1. React Debugging: The Card Draw React application has three (3) errors that need to be fixed. Use the console and error messages to guide you to the solution.
+1. React Debugging: The Card Draw React application has three (3) errors that need to be fixed. Use the console and error messages to guide you to the solution. ✅
 
-2. React Feature: Add functionality to the `Return Cards and Shuffle Deck` button using the `shuffle` function to reset the Card Draw application to its original state.
+-1st error was adding fragements syntax <></> in the return on App.js
+-2nd error was adding the export default Card to card.js component
+-3rd error was using passing props hand to Card.js. i used the destructured {hand}
 
-3. React Concepts: Add comments to the seven (7) notations in the `drawCard` function describing in detail the functionality line of code BELOW the comment.
+2. React Feature: Add functionality to the `Return Cards and Shuffle Deck` button using the `shuffle` function to reset the Card Draw application to its original state.✅
 
-4. STRETCH (optional): Add stylings of your choice to the application. Ensure the styling does not interfere with the card draw functionality.
+-added logic to the function shuffle. only added setHand([]). added the onclick to the button on line 53 which when clicked takes you back to the original state which is an empty array. 
+
+3. React Concepts: Add comments to the seven (7) notations in the `drawCard` function describing in detail the functionality line of code BELOW the comment.✅
+
+4. STRETCH (optional): Add stylings of your choice to the application. Ensure the styling does not interfere with the card draw functionality. ✅
 
 ### Interview Practice Questions
 
 1. What are three (3) syntax differences between HTML and JSX?
 
--
--
--
+- class vs className to specify css classes
+- in JSX you use {} for embeded javascripts expressions/variables. allows dynamic rendering.
+- fragment syntax <></> allows grouping in JSX
 
 2. What is yarn? What file(s) are modified when you run the command yarn in your terminal?
 
+-yarn is a Javascript package manager. running it in terminal adds the dependencies and creates the node_modules. this will then allow you to run you app using yarn start. 
+
 3. What is the difference between state values and props in React?
 
+- state values are mutables and props are immutable.
+- scope- state is local to the component where its defined. props can be passed from parent to child components
+- state is within a component using a use state hook in functional components. props are received by components as attributes in JSX when the components is used in the rendering. 
+
 4. STRETCH (optional): What is the difference between a div tag and a span tag?
+- a div tag is used to divide sections off in a webpage and spans the full width of the element. the span tag is used for inline styling. or for smaller portions of the content. 
+- if im right on this credit goes to morgan she taught me this within our tic tac toe project! but i remembered this from how she explained. i knew div but she showed me span.
 
 ### Looking Ahead: Terms for Next Unit
 
-1. Object-oriented programming:
+1. Object-oriented programming: after reading in the syllabus i would summerize OOP as a paradigm that organizes design around object. whic are data structures that encapsulate state and behavior. to me it sounds like OOP is just to enhance user expierence as applications grow it needs more to be able to handle everything that is thrown at it.
 
-2. Ruby:
+2. Ruby: a backend OOP programming language. it is open source. 
 
-3. Ruby Hashes:
+3. Ruby Hashes: a dictionary-like container for unique keys and their corresponding values.
 
 ---
 
